@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi Tabla Personalizada</title>
+  <style>
+    body {
+      background-color: #e6e6fa; /* fondo lavanda */
+      font-family: Arial, sans-serif;
+      margin: 30px;
+    }
+    h1 {
+      color: #4b0082;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #ffffff;
+    }
+    th, td {
+      border: 2px solid #4b0082;
+      padding: 10px;
+      text-align: center;
+    }
+    .celda-color {
+      background-color: #ffcccb; /* celda con color diferente */
+    }
+    img {
+      width: 100px;
+      height: auto;
+    }
+    a {
+      color: #0000ff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Actividad 3 - Tabla con HTML</h1>
+
+  <h2>Mi Tabla Personalizada</h2>
+
+  <table>
+    <tr>
+      <th>Nombre</th>
+      <th>Edad</th>
+      <th>Foto</th>
+      <th>Enlace</th>
+    </tr>
+    <tr>
+      <td>Ana</td>
+      <td>15</td>
+      <td rowspan="2"><img src="https://via.placeholder.com/100x100" alt="Foto de ejemplo"></td>
+      <td><a href="https://www.google.com" target="_blank">Ir a Google</a></td>
+    </tr>
+    <tr>
+      <td>Pedro</td>
+      <td class="celda-color">16</td>
+      <td><a href="https://www.youtube.com" target="_blank">Ir a YouTube</a></td>
+    </tr>
+    <tr>
+      <td>Laura</td>
+      <td>17</td>
+      <td>Sin foto</td>
+      <td>Sin enlace</td>
+    </tr>
+    <tr>
+      <td>Marco</td>
+      <td>18</td>
+      <td>Sin foto</td>
+      <td>Sin enlace</td>
+    </tr>
+  </table>
+
+</body>
+</html>
